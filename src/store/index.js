@@ -7,6 +7,12 @@ if (WXEnvironment.platform !== 'Web') {
     Vue.use(Vuex)
 }
 
-const store = new Vuex.Store({})
+import user from './user';
+
+const store = new Vuex.Store({
+    modules:{
+        user
+    }
+})
 
 export default store
